@@ -11,7 +11,7 @@ describe('Test suit for homework 1', () => {
             };
             expect(hw.salarySum(salaries)).toBe(650);
         });
-    
+
         it('should return 0 if no object properties provided', () => {
             const salaries = {};
             expect(hw.salarySum(salaries)).toBe(0);
@@ -28,7 +28,7 @@ describe('Test suit for homework 1', () => {
             };
             expect(hw.maxSalary(salaries, "")).toBe(emp);
         });
-    
+
         it('should return default name for properties not given', () => {
             const salaries = {};
             const def = "SomeDef"
@@ -45,7 +45,7 @@ describe('Test suit for homework 1', () => {
                 [vals[2][0]]: vals[2][1]
             };
             hw.multiplyNumeric(menu);
-            
+
             vals.forEach(kv => {
                 expect(menu[kv[0]]).toBe(kv[2]);
             });
@@ -81,5 +81,4 @@ describe('Test suit for homework 1', () => {
             });
         });
     });
-    
 });
