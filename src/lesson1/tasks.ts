@@ -61,4 +61,5 @@ export {
     countBy,
     multiplyNumeric,
     addClass,
+    Obj
 };
